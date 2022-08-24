@@ -1,4 +1,4 @@
-package com.jobag.jobagapi.config;
+package com.jobag.jobagapi.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +9,8 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
+//Link swagger -> http://localhost:8080/swagger-ui/index.html
+
 @Configuration
 public class SwaggerConfig {
     @Bean
@@ -18,6 +20,6 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Jobag API").description("Sob search system").build();
+        return new ApiInfoBuilder().title("Jobag API").description("Job search system").build();
     }
 }
