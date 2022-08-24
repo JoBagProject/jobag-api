@@ -9,7 +9,7 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-//Link swagger -> http://localhost:8080/swagger-ui/index.html
+//Link swagger -> http://localhost:8080/api/swagger-ui/index.html
 
 @Configuration
 public class SwaggerConfig {
