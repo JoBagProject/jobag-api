@@ -1,5 +1,7 @@
 package com.jobag.jobagapi.security.domain.repository;
 
+import java.util.Optional;
+
 import com.jobag.jobagapi.security.domain.model.Postulant;
 
 import org.springframework.data.domain.Pageable;
@@ -11,4 +13,5 @@ import org.springframework.stereotype.Repository;
 public interface PostulantRepository extends JpaRepository<Postulant, Long> {
     public Page<Postulant> findById(Long Id, Pageable page);
 
+    public Optional<Postulant> findByEmail(String email);
 }

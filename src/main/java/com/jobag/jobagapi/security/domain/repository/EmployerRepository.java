@@ -14,4 +14,6 @@ public interface EmployerRepository extends JpaRepository<Employer, Long> {
     public Page<Employer> findById(Long Id, Pageable page);
 
     public Optional<Employer> findByPosicion(String posicion);
+
+    public Optional<Employer> findByEmail(String email);
 }

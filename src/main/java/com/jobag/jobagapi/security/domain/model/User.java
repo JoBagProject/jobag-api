@@ -14,7 +14,6 @@ import com.jobag.jobagapi.general.domain.model.AuditModel;
 @Entity
 @Table(name = "users")
 @Inheritance(strategy = InheritanceType.JOINED)
-
 public class User extends AuditModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
